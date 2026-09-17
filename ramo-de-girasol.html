@@ -1,0 +1,909 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz día de las flores amarillas</title>
+    <!-- FontAwesome y Swiper -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Fuentes Elegantes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Playfair+Display:ital,wght@1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="no-cargado">
+
+    <div class="titulo-especial">
+        <h1>Feliz día de las flores amarillas</h1>
+        <h2>Ten tu ramo bonita</h2>
+    </div>
+
+    <div class="noche"></div>
+
+    <div class="mariposas" id="mariposas"></div>
+    <div class="particulas" id="particulas"></div>
+
+    <div class="ramo-container">
+        <!-- Envoltura trasera -->
+        <div class="envoltura-sway">
+            <div class="envoltura-atras-grupo">
+                <div class="celofan-atras"></div>
+            </div>
+        </div>
+
+        <div class="flores" id="flores-container">
+            <div class="flor flor--1">
+                <div class="flor__petalos flor__petalos--1">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="flor flor--2">
+                <div class="flor__petalos flor__petalos--2">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="flor flor--3">
+                <div class="flor__petalos flor__petalos--3">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="flor flor--4">
+                <div class="flor__petalos flor__petalos--4">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="flor flor--5">
+                <div class="flor__petalos flor__petalos--5">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="flor flor--6">
+                <div class="flor__petalos flor__petalos--6">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+
+
+            <div class="flor flor--8">
+                <div class="flor__petalos flor__petalos--8">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+
+            <div class="flor flor--10">
+                <div class="flor__petalos flor__petalos--10">
+                </div>
+                <div class="flor__linea">
+                    <div class="flor__linea__hoja flor__linea__hoja--1"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--2"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--3"></div>
+                    <div class="flor__linea__hoja flor__linea__hoja--4"></div>
+                </div>
+            </div>
+
+            <div class="creciendo-hierba">
+                <div class="flor__hierba flor__hierba--2">
+                    <div class="flor__hierba--superior"></div>
+                    <div class="flor__hierba--inferior"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--1"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--2"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--3"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--4"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--5"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--6"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--7"></div>
+                    <div class="flor__hierba__hoja flor__hierba__hoja--8"></div>
+                    <div class="flor__hierba__superposicion"></div>
+                </div>
+            </div>
+
+            <div class="crecer-ans" style="--d: 2.4s">
+                <div class="flor__hierba-derecha flor__hierba-derecha--1">
+                    <div class="hoja"></div>
+                </div>
+            </div>
+
+            <div class="crecer-ans" style="--d: 2.8s">
+                <div class="flor__hierba-derecha flor__hierba-derecha--2">
+                    <div class="hoja"></div>
+                </div>
+            </div>
+
+            <div class="crecer-ans" style="--d: 2.8s">
+                <div class="flor__hierba-frontal">
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--1">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--2">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--3">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--4">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--5">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--6">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--7">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__envoltura-hoja flor__hierba-frontal__envoltura-hoja--8">
+                        <div class="flor__hierba-frontal__hoja"></div>
+                    </div>
+                    <div class="flor__hierba-frontal__linea"></div>
+                </div>
+            </div>
+
+            <div class="crecer-ans" style="--d: 3.2s">
+                <div class="flor__hierba-fr">
+                    <div class="hoja"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--1"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--2"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--3"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--4"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--5"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--6"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--7"></div>
+                    <div class="flor__hierba-fr__hoja flor__hierba-fr__hoja--8"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--0">
+                <div class="crecer-ans" style="--d: 3s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 2.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.4s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--1">
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.8s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--2">
+                <div class="crecer-ans" style="--d: 4s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.4s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--3">
+                <div class="crecer-ans" style="--d: 4s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--4">
+                <div class="crecer-ans" style="--d: 4s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--5">
+                <div class="crecer-ans" style="--d: 4s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--6">
+                <div class="crecer-ans" style="--d: 4.2s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.4s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.6s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 4.8s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+
+            <div class="hierba-larga hierba-larga--7">
+                <div class="crecer-ans" style="--d: 3s">
+                    <div class="hoja hoja--0"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.2s">
+                    <div class="hoja hoja--1"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.5s">
+                    <div class="hoja hoja--2"></div>
+                </div>
+                <div class="crecer-ans" style="--d: 3.6s">
+                    <div class="hoja hoja--3"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Envoltura frontal y moño -->
+        <div class="envoltura-sway envoltura-sway-frente">
+            <div class="envoltura-frente-grupo">
+                <div class="celofan-frente"></div>
+                <div class="mono-amarillo"></div>
+                <div class="lazo lazo-izq"></div>
+                <div class="lazo lazo-der"></div>
+            </div>
+        </div>
+    </div> <!-- Cierra ramo-container -->
+
+    <div class="burbuja-carta" id="burbujaCarta">Para ti preciosa</div>
+    <div class="btn-carta" id="btnCarta">
+        <i class="fas fa-envelope-open-text"></i>
+    </div>
+
+    <div class="modal-overlay" id="modalCarta">
+        <div class="modal-content">
+            <button class="btn-cerrar" id="btnCerrar"><i class="fas fa-times"></i></button>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img5.jpg"
+                            alt="Flor 1">
+                        <h3>Para ti</h3>
+                        <p>Las flores amarillas representan la luz, la alegría y la energía que traes a mi vida cada
+                            día.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img2.jpg"
+                            alt="Flor 2">
+                        <h3>Con mucho cariño</h3>
+                        <p>Espero que este detalle ilumine tu día y te recuerde lo especial que eres para mí.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img3.jpg"
+                            onerror="this.src='https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img1.jpg'"
+                            alt="Flor 3">
+                        <h3>¡Feliz día!</h3>
+                        <p>Nunca dejes de brillar con esa sonrisa tan hermosa. ¡Te quiero muchísimo!</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img4.jpg"
+                            onerror="this.src='https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/IMG/imagenes/img2.jpg'"
+                            alt="Flor 4">
+                        <h3>Te pienso</h3>
+                        <p>Que hoy todo te salga de maravilla. Recibe este detalle con todo mi cariño.</p>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Música de fondo: elemento declarativo para que cargue desde el inicio -->
+    <audio id="musica-fondo" loop preload="auto" src="https://bcodestorague.anteroteobaldob.workers.dev/share/anteroteobaldob_gmail_com/AUDIO/Flores%20amarillas.mp3"></audio>
+
+    <script>
+        let audio, controlPausa, estaReproduciendo = false;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Multiplicador de flores para hacer el ramo mucho más tupido
+            const floresContainer = document.getElementById('flores-container');
+            const floresOriginales = Array.from(floresContainer.querySelectorAll('.flor'));
+
+            // Clonaremos aleatoriamente flores existentes - menos en móvil para no tapar el título
+            const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+            // modoLite: menos nodos SVG y sin filtros caros para animación fluida en celular
+            const modoLite = vw < 768;
+            const totalFloresObjetivo = vw < 480 ? 16 : vw < 768 ? 22 : 30;
+            let currentId = floresOriginales.length + 1;
+
+            while (floresContainer.querySelectorAll('.flor').length < totalFloresObjetivo) {
+                // Elegir una flor base al azar
+                const florBase = floresOriginales[Math.floor(Math.random() * floresOriginales.length)];
+                const clon = florBase.cloneNode(true);
+
+                // Cambiar la clase para poder darle estilos únicos o simplemente sobreescribir estilos
+                clon.className = `flor flor--${currentId}`;
+
+                // Variar posición y rotación - rango compacto para ramo tupido sin desborde
+                const leftPos = Math.random() * 60 + 20; // entre 20% y 80%
+                const rotate = Math.random() * 30 - 15; // entre -15 y 15 grados
+                const scale = Math.random() * 0.35 + 0.55; // entre 0.55 y 0.9
+                const zIndex = Math.floor(Math.random() * 40) + 10;
+
+                clon.style.left = `${leftPos}%`;
+                clon.style.transform = `rotate(${rotate}deg) scale(${scale})`;
+                clon.style.zIndex = zIndex;
+                clon.style.bottom = `${Math.random() * 8 + 5}vmin`;
+
+                floresContainer.appendChild(clon);
+                currentId++;
+            }
+
+            const mariposasContainer = document.getElementById('mariposas');
+
+            const coloresMariposas = [
+                ['#FFD700', '#FFC107', '#B8860B'],
+                ['#FFBF00', '#FFAA00', '#DAA520'],
+                ['#F0C040', '#E0A800', '#C89400'],
+                ['#FFECB3', '#FFF8E1', '#FFE082'],
+                ['#FFE44D', '#FFD700', '#FFB300']
+            ];
+
+            // Mismo efecto que en PC: 8 mariposas en todos los dispositivos
+            const totalMariposas = 8;
+            for (let i = 0; i < totalMariposas; i++) {
+                const mariposaSVG = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                mariposaSVG.setAttribute('width', '120');
+                mariposaSVG.setAttribute('height', '120');
+                mariposaSVG.setAttribute('viewBox', '0 0 200 200');
+                mariposaSVG.classList.add('mariposa-svg');
+
+                // Dispersas por toda la pantalla: repartidas en columnas + altura aleatoria
+                // (lejos del ramo inferior para que no se pierdan entre las flores)
+                const posX = 4 + (i / totalMariposas) * 68 + Math.random() * 6;
+                const posY = 6 + Math.random() * 58;
+
+                const colorSet = coloresMariposas[Math.floor(Math.random() * coloresMariposas.length)];
+
+                const style = document.createElementNS('http://www.w3.org/2000/svg', 'style');
+                const duracionVuelo = 15 + Math.random() * 10;
+                const delayVuelo = Math.random() * 20;
+
+                style.textContent = `
+                    .mariposa-${i} {
+                        animation: vueloMariposa${i} ${duracionVuelo}s ease-in-out infinite ${delayVuelo}s;
+                        transform-origin: 100px 100px;
+                    }
+
+                    @keyframes vueloMariposa${i} {
+                        0%   { transform: translate(0px, 0px) rotate(0deg) scale(0.8); opacity: 0; }
+                        10%  { opacity: 1; }
+                        20%  { transform: translate(${50 + Math.random() * 50}px, ${-20 - Math.random() * 30}px) rotate(${10 + Math.random() * 20}deg) scale(1); }
+                        40%  { transform: translate(${80 + Math.random() * 40}px, ${10 + Math.random() * 20}px) rotate(${20 + Math.random() * 40}deg) scale(1.1); }
+                        50%  { transform: translate(${100 + Math.random() * 40}px, ${-10 + Math.random() * 20}px) rotate(${150 + Math.random() * 60}deg) scale(1); }
+                        60%  { transform: translate(${80 + Math.random() * 40}px, ${-30 - Math.random() * 20}px) rotate(${120 + Math.random() * 30}deg) scale(0.9); }
+                        80%  { transform: translate(${30 + Math.random() * 40}px, ${20 + Math.random() * 30}px) rotate(${100 + Math.random() * 20}deg) scale(1); }
+                        90%  { opacity: 1; }
+                        100% { transform: translate(0px, 0px) rotate(0deg) scale(0.8); opacity: 0; }
+                    }
+
+                    .ala-izq-${i}, .ala-der-${i} {
+                        fill: ${colorSet[0]};
+                        fill-opacity: 0.9;
+                        stroke: ${colorSet[0]};
+                        stroke-width: 4.5;
+                        stroke-linejoin: round;
+                        transform-origin: 100px 100px;
+                        animation: aleteo${i} ${0.6 + Math.random() * 0.4}s infinite ease-in-out;
+                    }
+
+                    .ala-izq-${i} { animation-delay: 0s; }
+                    .ala-der-${i} { animation-delay: ${0.2 + Math.random() * 0.3}s; }
+
+                    @keyframes aleteo${i} {
+                        0%, 100% { transform: rotate(0deg); }
+                        50% { transform: rotate(${12 + Math.random() * 10}deg); }
+                    }
+
+                    .cuerpo-${i} {
+                        stroke: ${colorSet[1]};
+                        stroke-width: 8;
+                        stroke-linecap: round;
+                    }
+
+                    .antena-${i} {
+                        stroke: ${colorSet[2]};
+                        stroke-width: 2;
+                        fill: none;
+                    }
+                `;
+
+                mariposaSVG.appendChild(style);
+
+                const mariposaGroup = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+                mariposaGroup.classList.add(`mariposa-${i}`);
+
+                const alaIzq1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                alaIzq1.classList.add(`ala-izq-${i}`);
+                alaIzq1.setAttribute('d', 'M100 100 C85 70, 65 90, 80 100');
+
+                const alaIzq2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                alaIzq2.classList.add(`ala-izq-${i}`);
+                alaIzq2.setAttribute('d', 'M100 100 C85 130, 65 110, 80 100');
+
+                const alaDer1 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                alaDer1.classList.add(`ala-der-${i}`);
+                alaDer1.setAttribute('d', 'M100 100 C115 70, 135 90, 120 100');
+
+                const alaDer2 = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                alaDer2.classList.add(`ala-der-${i}`);
+                alaDer2.setAttribute('d', 'M100 100 C115 130, 135 110, 120 100');
+
+                const cuerpo = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                cuerpo.classList.add(`cuerpo-${i}`);
+                cuerpo.setAttribute('x1', '100');
+                cuerpo.setAttribute('y1', '90');
+                cuerpo.setAttribute('x2', '100');
+                cuerpo.setAttribute('y2', '110');
+
+                const antenaIzq = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                antenaIzq.classList.add(`antena-${i}`);
+                antenaIzq.setAttribute('d', 'M100 90 C95 75, 85 75, 82 85');
+
+                const antenaDer = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+                antenaDer.classList.add(`antena-${i}`);
+                antenaDer.setAttribute('d', 'M100 90 C105 75, 115 75, 118 85');
+
+                mariposaGroup.appendChild(alaIzq1);
+                mariposaGroup.appendChild(alaIzq2);
+                mariposaGroup.appendChild(alaDer1);
+                mariposaGroup.appendChild(alaDer2);
+                mariposaGroup.appendChild(cuerpo);
+                mariposaGroup.appendChild(antenaIzq);
+                mariposaGroup.appendChild(antenaDer);
+
+                mariposaSVG.appendChild(mariposaGroup);
+
+                mariposaSVG.style.position = 'absolute';
+                mariposaSVG.style.left = `${posX}vw`;
+                mariposaSVG.style.top = `${posY}vh`;
+                // Sobre-expuestas: por encima de flores, título y hierba + brillo dorado
+                mariposaSVG.style.zIndex = '50000';
+                mariposaSVG.style.pointerEvents = 'none';
+                mariposaSVG.style.filter = 'drop-shadow(0 0 8px rgba(255, 215, 0, 0.9))';
+
+                mariposasContainer.appendChild(mariposaSVG);
+            }
+
+            const particulasContainer = document.getElementById('particulas');
+            const totalParticulas = modoLite ? 16 : 50;
+            for (let i = 0; i < totalParticulas; i++) {
+                const particula = document.createElement('div');
+                particula.className = 'particula';
+                particula.style.left = Math.random() * 100 + 'vw';
+                particula.style.animationDelay = Math.random() * 8 + 's';
+                particula.style.animationDuration = (Math.random() * 3 + 5) + 's';
+                particulasContainer.appendChild(particula);
+            }
+
+            document.body.classList.remove("no-cargado");
+
+            inicializarMusica();
+        });
+
+        function inicializarMusica() {
+            audio = document.getElementById('musica-fondo');
+            audio.loop = true;
+            audio.volume = 0.5;
+            crearControlPausa();
+
+            function marcarReproduciendo() {
+                estaReproduciendo = true;
+                if (controlPausa) controlPausa.innerHTML = '<i class="fas fa-pause"></i>';
+            }
+
+            // Intento de reproducción con sonido (automático donde el navegador lo permite).
+            function intentoAudible() {
+                let p;
+                try {
+                    p = audio.play();
+                } catch (e) {
+                    p = null;
+                }
+                if (p && p.then) {
+                    p.then(function () {
+                        marcarReproduciendo();
+                    }).catch(function () {
+                        // Bloqueado: autoplay silenciado (permitido); el sonido entra
+                        // solo con la primera interacción en pantalla.
+                        audio.muted = true;
+                        let pm;
+                        try {
+                            pm = audio.play();
+                        } catch (e) {
+                            pm = null;
+                        }
+                        if (pm && pm.then) {
+                            pm.then(marcarReproduciendo).catch(function (e) {
+                                console.log('Error reproduciendo audio:', e);
+                                if (controlPausa) controlPausa.innerHTML = '<i class="fas fa-play"></i>';
+                            });
+                        }
+                    });
+                } else if (p === undefined) {
+                    marcarReproduciendo();
+                }
+            }
+
+            try {
+                audio.load();
+            } catch (e) {}
+            intentoAudible();
+
+            // La primera interacción libera el sonido (un toque en cualquier parte).
+            document.addEventListener('pointerdown', function desbloquear() {
+                if (audio.muted) {
+                    audio.muted = false;
+                    audio.volume = 0.5;
+                }
+                if (!estaReproduciendo) {
+                    intentoAudible();
+                }
+            }, { once: true });
+        }
+
+        function crearControlPausa() {
+            if (controlPausa) return;
+
+            controlPausa = document.createElement('div');
+            controlPausa.className = 'control-musica';
+            controlPausa.innerHTML = '<i class="fas fa-pause"></i>';
+            controlPausa.style.cssText = `
+                position: fixed; 
+                bottom: 30px; 
+                left: 30px; 
+                width: 60px; 
+                height: 60px;
+                background: rgba(255, 215, 0, 0.2); 
+                border: 2px solid #FFD700; 
+                border-radius: 50%;
+                display: flex; 
+                justify-content: center; 
+                align-items: center; 
+                font-size: 26px;
+                cursor: pointer; 
+                z-index: 1000; 
+                box-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+                color: #FFD700;
+                transition: all 0.3s ease;
+                backdrop-filter: blur(5px);
+            `;
+            controlPausa.addEventListener('click', toggleReproduccion);
+            controlPausa.addEventListener('mouseenter', function () {
+                this.style.transform = 'scale(1.1)';
+                this.style.boxShadow = '0 0 15px rgba(255, 215, 0, 0.8)';
+            });
+            controlPausa.addEventListener('mouseleave', function () {
+                this.style.transform = 'scale(1)';
+            });
+            document.body.appendChild(controlPausa);
+        }
+
+        function toggleReproduccion() {
+            if (estaReproduciendo) {
+                audio.pause();
+                controlPausa.innerHTML = '<i class="fas fa-play"></i>';
+                controlPausa.style.boxShadow = '0 0 5px rgba(255, 215, 0, 0.3)';
+            } else {
+                audio.play().catch(e => {
+                    console.log('Error reproduciendo audio:', e);
+                });
+                controlPausa.innerHTML = '<i class="fas fa-pause"></i>';
+                controlPausa.style.boxShadow = '0 0 20px rgba(255, 215, 0, 0.8)';
+            }
+            estaReproduciendo = !estaReproduciendo;
+        }
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const modal = document.getElementById('modalCarta');
+            const btnOpen = document.getElementById('btnCarta');
+            const btnClose = document.getElementById('btnCerrar');
+
+            let swiper = new Swiper(".mySwiper", {
+                grabCursor: true,
+                spaceBetween: 30,
+                pagination: {
+                    el: ".swiper-pagination",
+                    dynamicBullets: true,
+                },
+                navigation: false
+            });
+
+            const burbuja = document.getElementById('burbujaCarta');
+            let temporizadorBurbuja = null;
+
+            function mostrarBurbuja(demora) {
+                clearTimeout(temporizadorBurbuja);
+                temporizadorBurbuja = setTimeout(() => {
+                    if (!modal.classList.contains('active')) {
+                        burbuja.classList.add('visible');
+                    }
+                }, demora);
+            }
+
+            function ocultarBurbuja() {
+                clearTimeout(temporizadorBurbuja);
+                burbuja.classList.remove('visible');
+            }
+
+            // Aparece a los 5 segundos de abrir la página
+            mostrarBurbuja(5000);
+
+            btnOpen.addEventListener('click', () => {
+                modal.classList.add('active');
+                ocultarBurbuja();
+                swiper.update(); // Fix render issues
+            });
+
+            btnClose.addEventListener('click', () => {
+                modal.classList.remove('active');
+                mostrarBurbuja(6000);
+            });
+
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) {
+                    modal.classList.remove('active');
+                    mostrarBurbuja(6000);
+                }
+            });
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const svgNS = "http://www.w3.org/2000/svg";
+
+            function createRealisticSunflower(container, index) {
+                container.innerHTML = '';
+
+                const svg = document.createElementNS(svgNS, "svg");
+                svg.setAttribute("viewBox", "0 0 200 200");
+                svg.style.width = "26vmin";
+                svg.style.height = "26vmin";
+                svg.style.position = "absolute";
+                svg.style.left = "50%";
+                svg.style.bottom = "0";
+                svg.style.transform = "translate(-50%, 50%)";
+                svg.style.zIndex = "5";
+
+                const defs = document.createElementNS(svgNS, "defs");
+
+                // Unique IDs for this specific flower
+                const idPetalGrad = `petalGrad_${index}`;
+                const idPetalShadow = `petalShadow_${index}`;
+                const idCenterGrad = `centerGrad_${index}`;
+                const idCssPattern = `cssPattern_${index}`;
+                const idSeedTexture = `seedTexture_${index}`;
+                const idDropShadow = `dropShadow_${index}`;
+
+                const petalGrad = document.createElementNS(svgNS, "linearGradient");
+                petalGrad.setAttribute("id", idPetalGrad);
+                petalGrad.setAttribute("x1", "0%");
+                petalGrad.setAttribute("y1", "0%");
+                petalGrad.setAttribute("x2", "0%");
+                petalGrad.setAttribute("y2", "100%");
+                petalGrad.innerHTML = '<stop offset="0%" stop-color="#FFEB3B" /><stop offset="20%" stop-color="#FFC107" /><stop offset="70%" stop-color="#FF8F00" /><stop offset="100%" stop-color="#D84315" />';
+                defs.appendChild(petalGrad);
+
+                const petalShadow = document.createElementNS(svgNS, "linearGradient");
+                petalShadow.setAttribute("id", idPetalShadow);
+                petalShadow.innerHTML = '<stop offset="0%" stop-color="rgba(0,0,0,0)" /><stop offset="30%" stop-color="rgba(0,0,0,0.05)" /><stop offset="50%" stop-color="rgba(0,0,0,0.15)" /><stop offset="70%" stop-color="rgba(0,0,0,0.05)" /><stop offset="100%" stop-color="rgba(0,0,0,0)" />';
+                defs.appendChild(petalShadow);
+
+                const centerGrad = document.createElementNS(svgNS, "radialGradient");
+                centerGrad.setAttribute("id", idCenterGrad);
+                centerGrad.innerHTML = '<stop offset="30%" stop-color="transparent" /><stop offset="95%" stop-color="rgba(0,0,0,0.9)" />';
+                defs.appendChild(centerGrad);
+
+                const cssPattern = document.createElementNS(svgNS, "pattern");
+                cssPattern.setAttribute("id", idCssPattern);
+                cssPattern.setAttribute("width", "6");
+                cssPattern.setAttribute("height", "6");
+                cssPattern.setAttribute("patternUnits", "userSpaceOnUse");
+
+                const baseRect = document.createElementNS(svgNS, "rect");
+                baseRect.setAttribute("width", "6");
+                baseRect.setAttribute("height", "6");
+                baseRect.setAttribute("fill", "#2a1508");
+
+                const patDot1 = document.createElementNS(svgNS, "circle");
+                patDot1.setAttribute("cx", "0");
+                patDot1.setAttribute("cy", "0");
+                patDot1.setAttribute("r", "1");
+                patDot1.setAttribute("fill", "#8A6B0E");
+
+                const patDot2 = document.createElementNS(svgNS, "circle");
+                patDot2.setAttribute("cx", "3");
+                patDot2.setAttribute("cy", "3");
+                patDot2.setAttribute("r", "1.5");
+                patDot2.setAttribute("fill", "#4d2b12");
+
+                cssPattern.appendChild(baseRect);
+                cssPattern.appendChild(patDot1);
+                cssPattern.appendChild(patDot2);
+                defs.appendChild(cssPattern);
+
+                const filter = document.createElementNS(svgNS, "filter");
+                filter.setAttribute("id", idSeedTexture);
+                filter.innerHTML = '<feTurbulence type="fractalNoise" baseFrequency="0.6" numOctaves="3" result="noise"/><feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 3 -1" in="noise" result="coloredNoise"/><feComposite operator="in" in="coloredNoise" in2="SourceGraphic" result="texture"/><feBlend mode="multiply" in="texture" in2="SourceGraphic"/>';
+                defs.appendChild(filter);
+
+                const dropShadow = document.createElementNS(svgNS, "filter");
+                dropShadow.setAttribute("id", idDropShadow);
+                dropShadow.innerHTML = '<feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#000" flood-opacity="0.4"/>';
+                defs.appendChild(dropShadow);
+
+                svg.appendChild(defs);
+
+                const petalsGroup = document.createElementNS(svgNS, "g");
+
+                // En móvil: menos pétalos por flor (30 vs 66) para carga fluida
+                const layers = (typeof modoLite !== 'undefined' && modoLite) ? [
+                    { count: 12, radius: 25, scale: 1, rotOffset: 0 },
+                    { count: 10, radius: 20, scale: 0.9, rotOffset: 7.5 },
+                    { count: 8, radius: 15, scale: 0.8, rotOffset: 4 }
+                ] : [
+                    { count: 24, radius: 25, scale: 1, rotOffset: 0 },
+                    { count: 24, radius: 20, scale: 0.9, rotOffset: 7.5 },
+                    { count: 18, radius: 15, scale: 0.8, rotOffset: 4 }
+                ];
+
+                layers.forEach(layer => {
+                    for (let i = 0; i < layer.count; i++) {
+                        const angle = (i * (360 / layer.count)) + layer.rotOffset + (Math.random() * 3 - 1.5);
+
+                        const petal = document.createElementNS(svgNS, "path");
+                        const p1x = 88 + (Math.random() * 6 - 3);
+                        const p2x = 112 + (Math.random() * 6 - 3);
+                        const pty = 5 + (Math.random() * 10);
+
+                        petal.setAttribute("d", 'M 100,100 C ' + p1x + ',60 ' + (p1x + 2) + ',30 100,' + pty + ' C ' + (p2x - 2) + ',30 ' + p2x + ',60 100,100');
+                        petal.setAttribute("fill", `url(#${idPetalGrad})`);
+                        // Sombra por pétalo desactivada en móvil: ~66 filtros por flor = animación trabada
+                        if (!(typeof modoLite !== 'undefined' && modoLite)) {
+                            petal.setAttribute("filter", `url(#${idDropShadow})`);
+                        }
+
+                        const fold = document.createElementNS(svgNS, "path");
+                        fold.setAttribute("d", 'M 100,100 Q 100,50 100,' + pty);
+                        fold.setAttribute("stroke", `url(#${idPetalShadow})`);
+                        fold.setAttribute("stroke-width", "5");
+                        fold.setAttribute("fill", "none");
+
+                        const g = document.createElementNS(svgNS, "g");
+                        g.setAttribute("transform", 'translate(100,100) rotate(' + angle + ') scale(' + layer.scale + ') translate(-100,-100)');
+
+                        g.appendChild(petal);
+                        g.appendChild(fold);
+                        petalsGroup.appendChild(g);
+                    }
+                });
+
+                svg.appendChild(petalsGroup);
+
+                const centerGroup = document.createElementNS(svgNS, "g");
+                const centerBase = document.createElementNS(svgNS, "circle");
+                centerBase.setAttribute("cx", "100");
+                centerBase.setAttribute("cy", "100");
+                centerBase.setAttribute("r", "32");
+                centerBase.setAttribute("fill", `url(#${idCssPattern})`);
+
+                const centerVignette = document.createElementNS(svgNS, "circle");
+                centerVignette.setAttribute("cx", "100");
+                centerVignette.setAttribute("cy", "100");
+                centerVignette.setAttribute("r", "32");
+                centerVignette.setAttribute("fill", `url(#${idCenterGrad})`);
+
+                centerGroup.appendChild(centerBase);
+                centerGroup.appendChild(centerVignette);
+
+                const centerShadow = document.createElementNS(svgNS, "circle");
+                centerShadow.setAttribute("cx", "100");
+                centerShadow.setAttribute("cy", "100");
+                centerShadow.setAttribute("r", "32");
+                centerShadow.setAttribute("fill", "none");
+                centerShadow.setAttribute("stroke", "rgba(0,0,0,0.6)");
+                centerShadow.setAttribute("stroke-width", "3");
+                centerGroup.appendChild(centerShadow);
+
+                svg.appendChild(centerGroup);
+                container.appendChild(svg);
+            }
+
+            document.querySelectorAll('.flor__petalos').forEach((container, index) => {
+                createRealisticSunflower(container, index);
+            });
+        });
+    </script>
+</body>
+
+</html>
