@@ -1,19 +1,19 @@
 ﻿/* ==========================================================================
-   style.css — Ramo de girasoles ("Feliz día de las flores amarillas")
-   Jerarquía del archivo (leer de arriba hacia abajo):
-   1. Reset y variables :root
-   2. Base: body, fondo .noche, título .titulo-especial
-   3. Ramo: .flores, .flor (x10), pétalos, centro, tallo .flor__linea
-   4. Detalles: semillas .flor__luz, hierbas
-   5. Keyframes de animación
-   6. Mariposas y partículas
-   7. Media queries originales (768px / 480px / 600px)
-   8. Modal + Swiper, botones flotantes
-   9. Contenedor .ramo-container, envoltura, celofán, moño y lazos
-   10. RESPONSIVE EXTRA (tabletas y celulares) — al final: lo último gana
-   Regla de oro: el diseño de PC no se toca; todo lo responsive vive
-   dentro de bloques @media (max-width: ...) en la sección 10.
-   ========================================================================== */
+    style.css — Ramo de girasoles ("Feliz día de las flores amarillas")
+    Jerarquía del archivo (leer de arriba hacia abajo):
+    1. Reset y variables :root
+    2. Base: body, fondo .noche, título .titulo-especial
+    3. Ramo: .flores, .flor (x10), pétalos, centro, tallo .flor__linea
+    4. Detalles: semillas .flor__luz, hierbas
+    5. Keyframes de animación
+    6. Mariposas y partículas
+    7. Media queries originales (768px / 480px / 600px)
+    8. Modal + Swiper, botones flotantes
+    9. Contenedor .ramo-container, envoltura, celofán, moño y lazos
+    10. RESPONSIVE EXTRA (tabletas y celulares) — al final: lo último gana
+    Regla de oro: el diseño de PC no se toca; todo lo responsive vive
+    dentro de bloques @media (max-width: ...) en la sección 10.
+    ========================================================================== */
 
 *,
         *::after,
