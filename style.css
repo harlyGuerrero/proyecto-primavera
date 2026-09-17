@@ -48,7 +48,13 @@
             perspective: 1000px;
             font-family: 'Arial', sans-serif;
         }
-
+        .lazo-rosa{
+            width: 77px;
+            position: absolute;
+            z-index: 6;
+            left: 45%;
+            top: 24px;
+        }
         .noche {
             position: fixed;
             left: 50%;
@@ -1703,18 +1709,23 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 40px 20px;
+            padding: 50px 20px;
             color: #fff;
         }
 
         .swiper-slide img {
-            width: 280px;
+            width: 380px;
             height: 320px;
-            object-fit: cover;
+            /* object-fit: cover; */
+            background: #FFFFFF;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
             border: 3px solid rgba(255, 255, 255, 0.2);
             margin-bottom: 25px;
+            border-bottom: 30px solid #ffffff;
+            border-top: 30px solid #ffffff;
+            border-left: 30px solid #ffffff;
+            border-right: 30px solid #ffffff;
         }
 
         .swiper-slide h3 {
