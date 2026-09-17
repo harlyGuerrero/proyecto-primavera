@@ -2022,8 +2022,8 @@
             }
 
             .swiper-slide img {
-                width: 220px;
-                height: 260px;
+                /* width: 220px;
+                height: 260px; */
             }
 }
 
@@ -2117,15 +2117,17 @@
             }
 
             .swiper-slide {
-                padding: 28px 14px;
+                /* padding: 28px 14px; */
             }
 
             .swiper-slide img {
-                width: 180px;
-                height: 210px;
-                margin-bottom: 16px;
+                width: 280px;
+                height: 240px;
+                /* margin-bottom: 16px; */
             }
-
+            .lazo-rosa{
+                left: 41%;
+            }
             .swiper-slide h3 {
                 font-size: 1.2rem;
             }
