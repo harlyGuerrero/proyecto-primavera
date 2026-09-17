@@ -615,18 +615,29 @@
             try {
                 audio.load();
             } catch (e) {}
+            if ('playsInline' in audio) audio.playsInline = true;
             intentoAudible();
 
-            // La primera interacción libera el sonido (un toque en cualquier parte).
-            document.addEventListener('pointerdown', function desbloquear() {
+            // En móvil el sonido exige gesto del usuario: se reintenta en CADA
+            // toque (no solo el primero, que puede llegar antes de que cargue
+            // el archivo) hasta que la música suene de verdad.
+            function desbloquear() {
                 if (audio.muted) {
                     audio.muted = false;
                     audio.volume = 0.5;
                 }
-                if (!estaReproduciendo) {
+                if (audio.paused) {
                     intentoAudible();
                 }
-            }, { once: true });
+                if (!audio.muted && !audio.paused) {
+                    document.removeEventListener('pointerdown', desbloquear);
+                    document.removeEventListener('touchend', desbloquear);
+                    document.removeEventListener('click', desbloquear);
+                }
+            }
+            document.addEventListener('pointerdown', desbloquear);
+            document.addEventListener('touchend', desbloquear);
+            document.addEventListener('click', desbloquear);
         }
 
         function crearControlPausa() {
